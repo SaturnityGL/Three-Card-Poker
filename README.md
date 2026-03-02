@@ -15,13 +15,16 @@ Download the HTML and play locally or just go to https://saturnitygl.github.io/T
 ## Currently set to allow you to just simply go to zero and tell you that you have no more, reset. 
 
 ## To change starting balance
+
 const CONFIG = {
   startingBalance: 1,000, // Change this, of course. 
 
 ## To change starting balance and link to an API (Maybe, grain of salt) Replace the whole line with
+
 startingBalance: await fetch ('/api/yourcurrency/balance').then(r => r.json()),
 
 ## To change min and max
+
 const CONFIG = {
   startingBalance: 1,000,
     minBet: 2,  // change this
